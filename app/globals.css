@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-dvh bg-surface text-zinc-100 antialiased;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -40%, rgb(34 211 238 / 0.12), transparent),
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgb(99 102 241 / 0.08), transparent);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Markdown docs (دليل) */
+.prose-docs h1 {
+  @apply text-3xl font-bold text-white mb-4;
+}
+
+.prose-docs h2 {
+  @apply text-2xl font-semibold text-white mt-8 mb-3 pb-2 border-b border-zinc-800;
+}
+
+.prose-docs h3 {
+  @apply text-lg font-semibold text-zinc-100 mt-6 mb-2;
+}
+
+.prose-docs a {
+  @apply text-accent hover:underline underline-offset-2;
+}
+
+.prose-docs code {
+  @apply font-mono;
+}
+
+.prose-docs pre code {
+  @apply bg-transparent p-0 text-inherit;
+}
+
+/* Print Styles */
+@media print {
+  /* Hide non-essential elements */
+  header,
+  footer,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Reset colors for print */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Show all content */
+  * {
+    overflow: visible !important;
+  }
+
+  /* Page breaks */
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  table, img, svg {
+    page-break-inside: avoid;
+  }
+
+  /* Typography for print */
+  body {
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+
+  h1 {
+    font-size: 18pt !important;
+  }
+
+  h2 {
+    font-size: 16pt !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+  }
+
+  /* Remove shadows and borders */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Links */
+  a {
+    text-decoration: underline !important;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  /* Charts (SVG) */
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
