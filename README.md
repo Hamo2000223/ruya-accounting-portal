@@ -52,6 +52,21 @@ npm run dev
 1. أنشئ مستودعاً جديداً على [github.com/new](https://github.com/new) (بدون README إن كان المجلد المحلي جاهزاً).
 2. من PowerShell داخل مجلد `portal`:
 
+**طريقة أ — سكربت (يتطلب تسجيل دخول مرة واحدة):**
+
+```powershell
+cd "مسار\مجلد\portal"
+# 1) ثبّت GitHub CLI إن لزم: winget install GitHub.cli
+# 2) سجّل الدخول (متصفح أو رمز):
+& "$env:ProgramFiles\GitHub CLI\gh.exe" auth login
+# 3) أنشئ المستودع وادفع (غيّر الاسم إن كان مأخوذاً):
+.\scripts\push-to-github.ps1 -RepoName "اسم-مستودعك"
+# مستودع خاص:
+.\scripts\push-to-github.ps1 -RepoName "اسم-مستودعك" -Private
+```
+
+**طريقة ب — يدوياً:**
+
 ```bash
 git init
 git add .
