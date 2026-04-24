@@ -12,9 +12,8 @@ const notoArabic = Noto_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "ثانوي أدبي — مراجعة المواد",
-  description:
-    "مرجع دراسي بالعربية لطلاب الثانوية الأدبية في مصر: تاريخ، إنجليزي، جغرافيا، عربي، إحصاء، فرنساوي — مع دليل ومقالات مراجعة.",
+  title: "رؤى محاسبية — حفر وتجارة",
+  description: "لوحة رؤى تفاعلية، محاكاة مالية، دورة المستندات، ودليل محاسبي — جاهز للعرض على العميل بالعربية.",
 };
 
 export default function RootLayout({
