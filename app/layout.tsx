@@ -12,8 +12,9 @@ const notoArabic = Noto_Sans_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "رؤى محاسبية — حفر وتجارة",
-  description: "لوحة رؤى تفاعلية، محاكاة مالية، دورة المستندات، ودليل محاسبي — جاهز للعرض على العميل بالعربية.",
+  title: "ثانوي أدبي — مراجعة المواد",
+  description:
+    "مرجع دراسي بالعربية لطلاب الثانوية الأدبية في مصر: تاريخ، إنجليزي، جغرافيا، عربي، إحصاء، فرنساوي — مع دليل ومقالات مراجعة.",
 };
 
 export default function RootLayout({

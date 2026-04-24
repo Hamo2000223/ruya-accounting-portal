@@ -6,9 +6,10 @@ export default function DocsPage() {
   return (
     <div className="container mx-auto max-w-5xl px-4 py-8">
       <div className="mb-8">
-        <h1 className="mb-2 text-4xl font-bold text-white">الدليل المحاسبي</h1>
+        <h1 className="mb-2 text-4xl font-bold text-white">دليل المراجعة</h1>
         <p className="text-zinc-400">
-          وثائق تفصيلية لجميع الجوانب المحاسبية — اقرأ داخل الموقع، وابحث سريعاً، واطبع عند الحاجة (Ctrl+P).
+          مقالات مرجعية للمواد الأدبية (ثانوي عام أدبي — مصر): اقرأ داخل الموقع، وابحث سريعاً، واطبع عند الحاجة
+          (Ctrl+P).
         </p>
       </div>
 
@@ -54,16 +55,14 @@ export default function DocsPage() {
         <h2 className="mb-4 text-xl font-bold text-white">كيفية استخدام الدليل</h2>
         <div className="space-y-3 text-sm text-zinc-400">
           <div className="border-b border-zinc-800 pb-3">
-            <strong className="text-zinc-300">للمبتدئين:</strong> ابدأ بـ «معجم المصطلحات» ثم «دليل الحسابات» ثم «دورة المحاسبة الشهرية».
+            <strong className="text-zinc-300">للبداية:</strong> اقرأ «دليل استخدام الموقع» ثم «معجم المصطلحات».
           </div>
           <div className="border-b border-zinc-800 pb-3">
-            <strong className="text-zinc-300">لشركات المشاريع:</strong> راجع «تكلفة الوظائف» و«ربحية المشاريع» في البوابة مع المستند.
-          </div>
-          <div className="border-b border-zinc-800 pb-3">
-            <strong className="text-zinc-300">للامتثال الضريبي:</strong> «الضرائب والامتثال» وصفحة الامتثال في البوابة — مع مراجعة مختص.
+            <strong className="text-zinc-300">لمادة معينة:</strong> من الرئيسية ادخل صفحة المادة، ثم افتح «مراجعة…»
+            من الدليل.
           </div>
           <div>
-            <strong className="text-zinc-300">للمدير:</strong> «دليل المستخدم» و«الأسئلة الشائعة» ثم اللوحة التنفيذية.
+            <strong className="text-zinc-300">للأسئلة العامة:</strong> راجع «الأسئلة الشائعة».
           </div>
         </div>
       </div>
@@ -71,8 +70,8 @@ export default function DocsPage() {
       <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6">
         <h2 className="mb-4 text-xl font-bold text-white">ملاحظة مهمة</h2>
         <p className="text-sm leading-relaxed text-zinc-400">
-          هذه المستندات للإرشاد العام داخل البوابة — <strong className="text-zinc-300">لا تحل محل استشارة محاسب أو مستشار ضريبي معتمد</strong>.
-          لكل شركة ظروف خاصة، واللوائح تتغير؛ راجع فريقكم قبل القرارات الجوهرية.
+          هذه المستندات <strong className="text-zinc-300">لا تحل محل المنهج الرسمي أو شرح المعلم</strong>. استخدمها
+          كتنظيم ومراجعة نظرية فقط.
         </p>
       </div>
     </div>
